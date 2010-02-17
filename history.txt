@@ -1,0 +1,875 @@
+
+C:\work\ruby\Zork>
+C:\work\ruby\Zork>
+C:\work\ruby\Zork>touch zork.ruby
+
+C:\work\ruby\Zork>del *.ruby
+
+C:\work\ruby\Zork>touch zork.rb
+
+C:\work\ruby\Zork>touch zork_spec.rb
+
+C:\work\ruby\Zork>spec zork_spec.rb
+./zork_spec.rb:3: uninitialized constant Zork (NameError)
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+        from C:/Ruby/bin/spec:19:in `load'
+        from C:/Ruby/bin/spec:19
+
+C:\work\ruby\Zork>spec zork_spec.rb
+./zork_spec.rb:8: uninitialized constant Place (NameError)
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:183:in `modu
+le_eval'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:183:in `subc
+lass'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:55:in `descr
+ibe'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_factory.rb:31:in `creat
+e_example_group'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/dsl/main.rb:28:in `describe'
+        from ./zork_spec.rb:3
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+        from C:/Ruby/bin/spec:19:in `load'
+        from C:/Ruby/bin/spec:19
+
+C:\work\ruby\Zork>
+C:\work\ruby\Zork>touch place.rb
+
+C:\work\ruby\Zork>touch place.rb
+
+C:\work\ruby\Zork>spec zork_spec.rb
+./zork_spec.rb:8: uninitialized constant Place (NameError)
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:183:in `modu
+le_eval'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:183:in `subc
+lass'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_methods.rb:55:in `descr
+ibe'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/example/example_group_factory.rb:31:in `creat
+e_example_group'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/dsl/main.rb:28:in `describe'
+        from ./zork_spec.rb:3
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+        from C:/Ruby/bin/spec:19:in `load'
+        from C:/Ruby/bin/spec:19
+
+C:\work\ruby\Zork>spec zork_spec.rb
+****
+
+Pending:
+
+Zork should have a starting place (Not Yet Implemented)
+./zork_spec.rb:7
+
+Zork Place should have a description (Not Yet Implemented)
+./zork_spec.rb:9
+
+Zork Place should have a list of links (Not Yet Implemented)
+./zork_spec.rb:10
+
+Zork Place should allow a link to be followed (Not Yet Implemented)
+./zork_spec.rb:11
+
+Finished in 0.094 seconds
+
+4 examples, 0 failures, 4 pending
+
+C:\work\ruby\Zork>spec zork_spec.rb
+F***
+
+Pending:
+
+Zork Place should have a description (Not Yet Implemented)
+./zork_spec.rb:11
+
+Zork Place should have a list of links (Not Yet Implemented)
+./zork_spec.rb:12
+
+Zork Place should allow a link to be followed (Not Yet Implemented)
+./zork_spec.rb:13
+
+1)
+NoMethodError in 'Zork should have a starting place'
+undefined method `place' for #<Zork:0x2ceb77c>
+./zork_spec.rb:8:
+
+Finished in 0.031 seconds
+
+4 examples, 1 failure, 3 pending
+
+C:\work\ruby\Zork>spec zork_spec.rb
+F***
+
+Pending:
+
+Zork Place should have a description (Not Yet Implemented)
+./zork_spec.rb:11
+
+Zork Place should have a list of links (Not Yet Implemented)
+./zork_spec.rb:12
+
+Zork Place should allow a link to be followed (Not Yet Implemented)
+./zork_spec.rb:13
+
+1)
+'Zork should have a starting place' FAILED
+expected not nil, got nil
+./zork_spec.rb:8:
+
+Finished in 0.032 seconds
+
+4 examples, 1 failure, 3 pending
+
+C:\work\ruby\Zork>spec zork_spec.rb
+.***
+
+Pending:
+
+Zork Place should have a description (Not Yet Implemented)
+./zork_spec.rb:11
+
+Zork Place should have a list of links (Not Yet Implemented)
+./zork_spec.rb:12
+
+Zork Place should allow a link to be followed (Not Yet Implemented)
+./zork_spec.rb:13
+
+Finished in 0.031 seconds
+
+4 examples, 0 failures, 3 pending
+
+C:\work\ruby\Zork>touch place_spec.rb
+
+C:\work\ruby\Zork>spec place_spec.rb
+FFFF
+
+1)
+ArgumentError in 'Place should have a description'
+wrong number of arguments (1 for 0)
+./place_spec.rb:6:in `initialize'
+./place_spec.rb:6:in `new'
+./place_spec.rb:6:
+
+2)
+ArgumentError in 'Place the description should be what was initialized'
+wrong number of arguments (1 for 0)
+./place_spec.rb:6:in `initialize'
+./place_spec.rb:6:in `new'
+./place_spec.rb:6:
+
+3)
+ArgumentError in 'Place should have a list of links'
+wrong number of arguments (1 for 0)
+./place_spec.rb:6:in `initialize'
+./place_spec.rb:6:in `new'
+./place_spec.rb:6:
+
+4)
+ArgumentError in 'Place should allow a link to be followed'
+wrong number of arguments (1 for 0)
+./place_spec.rb:6:in `initialize'
+./place_spec.rb:6:in `new'
+./place_spec.rb:6:
+
+Finished in 0.031 seconds
+
+4 examples, 4 failures
+
+C:\work\ruby\Zork>spec place_spec.rb
+FFF*
+
+Pending:
+
+Place should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:17
+
+1)
+NoMethodError in 'Place should have a description'
+undefined method `description' for #<Place:0x2cebe34>
+./place_spec.rb:9:
+
+2)
+NoMethodError in 'Place the description should be what was initialized'
+undefined method `description' for #<Place:0x2ce9544>
+./place_spec.rb:12:
+
+3)
+NoMethodError in 'Place should have a list of links'
+undefined method `links' for #<Place:0x2ce74c4>
+./place_spec.rb:15:
+
+Finished in 0.031 seconds
+
+4 examples, 3 failures, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+./place.rb:2: undefined method `attr_accesor' for Place:Class (NoMethodError)
+        from C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+        from C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+        from ./place_spec.rb:1
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+        from C:/Ruby/bin/spec:19:in `load'
+        from C:/Ruby/bin/spec:19
+
+C:\work\ruby\Zork>spec place_spec.rb
+./place.rb:2: undefined method `attr_accesssor' for Place:Class (NoMethodError)
+        from C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+        from C:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+        from ./place_spec.rb:1
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:15:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `each'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/example_group_runner.rb:14:in `load_fi
+les'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/options.rb:133:in `run_examples'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/lib/spec/runner/command_line.rb:9:in `run'
+        from C:/Ruby/lib/ruby/gems/1.8/gems/rspec-1.3.0/bin/spec:5
+        from C:/Ruby/bin/spec:19:in `load'
+        from C:/Ruby/bin/spec:19
+
+C:\work\ruby\Zork>spec place_spec.rb
+FFF*
+
+Pending:
+
+Place should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:17
+
+1)
+'Place should have a description' FAILED
+expected not nil, got nil
+./place_spec.rb:9:
+
+2)
+'Place the description should be what was initialized' FAILED
+expected: "some place",
+     got: nil (using ==)
+./place_spec.rb:12:
+
+3)
+NoMethodError in 'Place should have a list of links'
+undefined method `links' for #<Place:0x2ce4094>
+./place_spec.rb:15:
+
+Finished in 0.031 seconds
+
+4 examples, 3 failures, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+.FF*
+
+Pending:
+
+Place should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:17
+
+1)
+'Place the description should be what was initialized' FAILED
+expected: "some place",
+     got: {:description=>"some place"} (using ==)
+./place_spec.rb:12:
+
+2)
+NoMethodError in 'Place should have a list of links'
+undefined method `links' for #<Place:0x2ce5e08 @description={:description=>"some place"}>
+./place_spec.rb:15:
+
+Finished in 0.031 seconds
+
+4 examples, 2 failures, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+..F*
+
+Pending:
+
+Place should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:17
+
+1)
+NoMethodError in 'Place should have a list of links'
+undefined method `links' for #<Place:0x2ce8658 @description="some place">
+./place_spec.rb:15:
+
+Finished in 0.031 seconds
+
+4 examples, 1 failure, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+..F*FF
+
+Pending:
+
+Place valid object should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:18
+
+1)
+NoMethodError in 'Place valid object should have a list of links'
+undefined method `links' for #<Place:0x2ce62b8 @description="some place">
+./place_spec.rb:16:
+
+2)
+ArgumentError in 'Place default values should have a description'
+wrong number of arguments (0 for 1)
+./place_spec.rb:23:in `initialize'
+./place_spec.rb:23:in `new'
+./place_spec.rb:23:
+
+3)
+ArgumentError in 'Place default values should have a description'
+wrong number of arguments (0 for 1)
+./place_spec.rb:23:in `initialize'
+./place_spec.rb:23:in `new'
+./place_spec.rb:23:
+
+Finished in 0.032 seconds
+
+6 examples, 3 failures, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+..F*..
+
+Pending:
+
+Place valid object should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:18
+
+1)
+NoMethodError in 'Place valid object should have a list of links'
+undefined method `links' for #<Place:0x2ce6218 @description="some place">
+./place_spec.rb:16:
+
+Finished in 0.031 seconds
+
+6 examples, 1 failure, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+..F*..
+
+Pending:
+
+Place filled in object should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:18
+
+1)
+'Place filled in object should have a list of links' FAILED
+expected: [],
+     got: nil (using ==)
+./place_spec.rb:16:
+
+Finished in 0.032 seconds
+
+6 examples, 1 failure, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+...*..
+
+Pending:
+
+Place filled in object should allow a link to be followed (Not Yet Implemented)
+./place_spec.rb:18
+
+Finished in 0.031 seconds
+
+6 examples, 0 failures, 1 pending
+
+C:\work\ruby\Zork>spec place_spec.rb
+.....
+
+Finished in 0.031 seconds
+
+5 examples, 0 failures
+
+C:\work\ruby\Zork>spec zork_spec.rb
+.F
+
+1)
+NoMethodError in 'Zork should allow you to go to another place'
+undefined method `place=' for #<Zork:0x2ce8284>
+./zork_spec.rb:20:
+
+Finished in 0.031 seconds
+
+2 examples, 1 failure
+
+C:\work\ruby\Zork>spec zork_spec.rb
+.F
+
+1)
+NoMethodError in 'Zork should allow you to go to another place'
+undefined method `follow' for #<Zork:0x2ce8248>
+./zork_spec.rb:21:
+
+Finished in 0.031 seconds
+
+2 examples, 1 failure
+
+C:\work\ruby\Zork>spec zork_spec.rb
+.F
+
+1)
+'Zork should allow you to go to another place' FAILED
+expected: #<Place:0x2ce7f00 @description="there is a firepole and a hole in the ceiling", @links={}>,
+     got: nil (using ==)
+./zork_spec.rb:21:
+
+Finished in 0.032 seconds
+
+2 examples, 1 failure
+
+C:\work\ruby\Zork>spec zork_spec.rb
+..
+
+Finished in 0.031 seconds
+
+2 examples, 0 failures
+
+C:\work\ruby\Zork>git init
+Initialized empty Git repository in /cygdrive/c/work/ruby/Zork/.git/
+
+C:\work\ruby\Zork>git add .
+
+C:\work\ruby\Zork>git commit -m "basic zork and place classes"
+[master (root-commit) 076b0d3] basic zork and place classes
+ 4 files changed, 81 insertions(+), 0 deletions(-)
+ create mode 100644 place.rb
+ create mode 100644 place_spec.rb
+ create mode 100644 zork.rb
+ create mode 100644 zork_spec.rb
+
+C:\work\ruby\Zork>md testdata
+
+C:\work\ruby\Zork>cd testdata
+
+C:\work\ruby\Zork\testdata>touch zork.yaml
+
+C:\work\ruby\Zork\testdata>gvim zork.yaml
+'gvim' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\work\ruby\Zork\testdata>explorer .
+
+C:\work\ruby\Zork\testdata>irb
+irb(main):001:0> require 'yaml'
+=> false
+irb(main):002:0> y String.methods
+---
+- inspect
+- instance_method
+- private_class_method
+- const_missing
+- clone
+- yaml_tag_class_name
+- public_methods
+- public_instance_methods
+- display
+- instance_variable_defined?
+- method_defined?
+- to_yaml_properties
+- superclass
+- equal?
+- freeze
+- included_modules
+- const_get
+- to_yaml
+- taguri
+- methods
+- respond_to?
+- module_eval
+- class_variables
+- taguri=
+- autoload?
+- dup
+- protected_instance_methods
+- instance_variables
+- public_method_defined?
+- __id__
+- method
+- eql?
+- yaml_new
+- const_set
+- id
+- to_yaml_style
+- singleton_methods
+- send
+- class_eval
+- taint
+- yaml_tag_read_class
+- frozen?
+- instance_variable_get
+- include?
+- private_instance_methods
+- __send__
+- instance_of?
+- private_method_defined?
+- to_a
+- name
+- type
+- new
+- yaml_as
+- <
+- protected_methods
+- instance_eval
+- object_id
+- <=>
+- ==
+- ">"
+- ===
+- instance_variable_set
+- kind_of?
+- extend
+- protected_method_defined?
+- const_defined?
+- ">="
+- ancestors
+- to_s
+- <=
+- public_class_method
+- allocate
+- hash
+- class
+- instance_methods
+- yaml_tag_subclasses?
+- tainted?
+- =~
+- private_methods
+- class_variable_defined?
+- autoload
+- nil?
+- untaint
+- constants
+- is_a?
+=> nil
+irb(main):003:0>
+irb(main):004:0*
+irb(main):005:0* load 'place.rb'
+LoadError: no such file to load -- place.rb
+        from (irb):5:in `load'
+        from (irb):5
+irb(main):006:0> load
+ArgumentError: wrong number of arguments (0 for 1)
+        from (irb):6:in `load'
+        from (irb):6
+irb(main):007:0> load '../place.rb'
+=> true
+irb(main):008:0> Place.new
+=> #<Place:0x2828c6c @links={}, @description="the vastness of space">
+irb(main):009:0> p = Place.new
+=> #<Place:0x2d1c638 @links={}, @description="the vastness of space">
+irb(main):010:0> y p
+--- !ruby/object:Place
+description: the vastness of space
+links: {}
+
+=> nil
+irb(main):011:0> p.links = {"go north" => "firehouse", "go up" => "loft"}
+=> {"go up"=>"loft", "go north"=>"firehouse"}
+irb(main):012:0> y p
+--- !ruby/object:Place
+description: the vastness of space
+links:
+  go up: loft
+  go north: firehouse
+=> nil
+irb(main):013:0> xx = YAML::load(File.open('zork.yaml'))
+'rgumentError: syntax error on line 1, col 20: `        description: you are in a house
+        from C:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+        from C:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+        from (irb):13
+        from :0
+irb(main):014:0> xx = YAML::load(File.open('zork.yaml'))
+'rgumentError: syntax error on line 1, col 20: `        description: you are in a house
+        from C:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+        from C:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+        from (irb):14
+        from :0
+irb(main):015:0> p2 = Place.new
+=> #<Place:0x2d0afb4 @links={}, @description="the vastness of space">
+irb(main):016:0> map = {"house" => p, "space" => p2}
+=> {"house"=>#<Place:0x2d1c638 @links={"go up"=>"loft", "go north"=>"firehouse"}, @description="the vastness o
+f space">, "space"=>#<Place:0x2d0afb4 @links={}, @description="the vastness of space">}
+irb(main):017:0> y map
+---
+house: !ruby/object:Place
+  description: the vastness of space
+  links:
+    go up: loft
+    go north: firehouse
+space: !ruby/object:Place
+  description: the vastness of space
+  links: {}
+
+=> nil
+irb(main):018:0> exir
+NameError: undefined local variable or method `exir' for main:Object
+        from (irb):18
+        from :0
+irb(main):019:0> exit
+
+C:\work\ruby\Zork\testdata>irb
+irb(main):001:0> f = File.open('zork.yaml')
+=> #<File:zork.yaml>
+irb(main):002:0> YAML::load(f)
+=> {"house"=>#<YAML::Object:0x2b335b0 @ivars={"description"=>"you are in a house", "links"=>{"go north"=>"fire
+house", "go upstairs"=>"loft", "go down"=>"tunnel"}}, @class="Place">, "tunnel"=>#<YAML::Object:0x2b31b48 @iva
+rs={"description"=>"it is dark in here"}, @class="Place">, "firehouse"=>#<YAML::Object:0x2b30b6c @ivars={"desc
+ription"=>"there is a long pole and a hole in the ceiling", "links"=>{"go south"=>"house"}}, @class="Place">,
+"loft"=>#<YAML::Object:0x2b32728 @ivars={"description"=>"he loft is light and airy", "links"=>{"go downstairs"
+=>"house"}}, @class="Place">}
+irb(main):003:0> f.rewind
+=> 0
+irb(main):004:0> map = YAML::load(f)
+=> {"house"=>#<YAML::Object:0x2902318 @ivars={"description"=>"you are in a house", "links"=>{"go north"=>"fire
+house", "go upstairs"=>"loft", "go down"=>"tunnel"}}, @class="Place">, "tunnel"=>#<YAML::Object:0x28fe63c @iva
+rs={"description"=>"it is dark in here"}, @class="Place">, "firehouse"=>#<YAML::Object:0x28fc3a0 @ivars={"desc
+ription"=>"there is a long pole and a hole in the ceiling", "links"=>{"go south"=>"house"}}, @class="Place">,
+"loft"=>#<YAML::Object:0x290147c @ivars={"description"=>"he loft is light and airy", "links"=>{"go downstairs"
+=>"house"}}, @class="Place">}
+irb(main):005:0> map["house"]
+=> #<YAML::Object:0x2902318 @ivars={"description"=>"you are in a house", "links"=>{"go north"=>"firehouse", "g
+o upstairs"=>"loft", "go down"=>"tunnel"}}, @class="Place">
+irb(main):006:0> quit
+
+C:\work\ruby\Zork\testdata>cd ..
+
+C:\work\ruby\Zork>spec place_spec.rb
+F.....F
+
+1)
+NoMethodError in 'Place filled in object should have a name'
+undefined method `name' for #<Place:0x2ce8eb4 @description="my very nice place", @links={}>
+./place_spec.rb:11:
+
+2)
+NoMethodError in 'Place default values should have a name'
+undefined method `name' for #<Place:0x2ce03f4>
+./place_spec.rb:38:
+
+Finished in 0.031 seconds
+
+7 examples, 2 failures
+
+C:\work\ruby\Zork>spec place_spec.rb
+FFFF.FF
+
+1)
+NoMethodError in 'Place filled in object should have a name'
+undefined method `|' for "my very nice place":String
+./place.rb:6:in `initialize'
+./place_spec.rb:8:in `new'
+./place_spec.rb:8:
+
+2)
+NoMethodError in 'Place filled in object should have a description'
+undefined method `|' for "my very nice place":String
+./place.rb:6:in `initialize'
+./place_spec.rb:8:in `new'
+./place_spec.rb:8:
+
+3)
+NoMethodError in 'Place filled in object the description should be what was initialized'
+undefined method `|' for "my very nice place":String
+./place.rb:6:in `initialize'
+./place_spec.rb:8:in `new'
+./place_spec.rb:8:
+
+4)
+NoMethodError in 'Place filled in object should have a list of links'
+undefined method `|' for "my very nice place":String
+./place.rb:6:in `initialize'
+./place_spec.rb:8:in `new'
+./place_spec.rb:8:
+
+5)
+'Place default values should have a description' FAILED
+expected: "the vastness of space",
+     got: true (using ==)
+./place_spec.rb:35:
+
+6)
+'Place default values should have a name' FAILED
+expected: "empty place",
+     got: true (using ==)
+./place_spec.rb:38:
+
+Finished in 0.031 seconds
+
+7 examples, 6 failures
+
+C:\work\ruby\Zork>irb
+irb(main):001:0> x != 3
+NameError: undefined local variable or method `x' for main:Object
+        from (irb):1
+irb(main):002:0> x = nil
+=> nil
+irb(main):003:0> x != 3
+=> true
+irb(main):004:0> x
+=> nil
+irb(main):005:0> x |= 3
+=> true
+irb(main):006:0> x
+=> true
+irb(main):007:0> x
+=> true
+irb(main):008:0> quit
+
+C:\work\ruby\Zork>spec place_spec.rb
+F......
+
+1)
+'Place filled in object should have a name' FAILED
+expected: "my place",
+     got: "empty place" (using ==)
+./place_spec.rb:12:
+
+Finished in 0.031 seconds
+
+7 examples, 1 failure
+
+C:\work\ruby\Zork>spec place_spec.rb
+.......
+
+Finished in 0.031 seconds
+
+7 examples, 0 failures
+
+C:\work\ruby\Zork>spec zork_spec.rb
+..F
+
+1)
+ArgumentError in 'Zork loading a map should load a map at startup'
+wrong number of arguments (1 for 0)
+./zork_spec.rb:27:in `initialize'
+./zork_spec.rb:27:in `new'
+./zork_spec.rb:27:
+
+Finished in 0.031 seconds
+
+3 examples, 1 failure
+
+C:\work\ruby\Zork>spec zork_spec.rb
+C:/Ruby/lib/ruby/1.8/YAML.rb:87: warning: already initialized constant Resolver
+C:/Ruby/lib/ruby/1.8/YAML.rb:88: warning: already initialized constant DefaultResolver
+C:/Ruby/lib/ruby/1.8/YAML.rb:90: warning: already initialized constant GenericResolver
+C:/Ruby/lib/ruby/1.8/YAML.rb:91: warning: already initialized constant Parser
+C:/Ruby/lib/ruby/1.8/YAML.rb:92: warning: already initialized constant Emitter
+..F
+
+1)
+NoMethodError in 'Zork loading a map should load a map at startup'
+undefined method `name' for nil:NilClass
+./zork_spec.rb:28:
+
+Finished in 0.0 seconds
+
+3 examples, 1 failure
+
+C:\work\ruby\Zork>spec zork_spec.rb
+..F
+
+1)
+NoMethodError in 'Zork loading a map should load a map at startup'
+undefined method `name' for nil:NilClass
+./zork_spec.rb:28:
+
+Finished in 0.031 seconds
+
+3 examples, 1 failure
+
+C:\work\ruby\Zork>spec zork_spec.rb
+..F
+
+1)
+'Zork loading a map should load a map at startup' FAILED
+expected: "house",
+     got: nil (using ==)
+./zork_spec.rb:28:
+
+Finished in 0.031 seconds
+
+3 examples, 1 failure
+
+C:\work\ruby\Zork>irb
+irb(main):001:0> load "zork"
+LoadError: no such file to load -- zork
+        from (irb):1:in `load'
+        from (irb):1
+irb(main):002:0> load "zork.rb"
+=> true
+irb(main):003:0> z = Zork.new("testdata/zork.yaml")
+=> #<Zork:0x2b27620 @places={"house"=>#<Place:0x2b26720 @description="you are in a house", @links={"go north"=
+>"firehouse", "go upstairs"=>"loft", "go down"=>"tunnel"}>, "tunnel"=>#<Place:0x2b24a10 @description="it is da
+rk in here">, "firehouse"=>#<Place:0x2b23994 @description="there is a long pole and a hole in the ceiling", @l
+inks={"go south"=>"house"}>, "loft"=>#<Place:0x2b2558c @description="he loft is light and airy", @links={"go d
+ownstairs"=>"house"}>}, @place=#<Place:0x2b26720 @description="you are in a house", @links={"go north"=>"fireh
+ouse", "go upstairs"=>"loft", "go down"=>"tunnel"}>>
+irb(main):004:0> z.places
+NoMethodError: undefined method `places' for #<Zork:0x2b27620>
+        from (irb):4
+irb(main):005:0> z.place
+=> #<Place:0x2b26720 @description="you are in a house", @links={"go north"=>"firehouse", "go upstairs"=>"loft"
+, "go down"=>"tunnel"}>
+irb(main):006:0> z.place.name
+=> nil
+irb(main):007:0> exit
+
+C:\work\ruby\Zork>spec zork_spec.rb
+...
+
+Finished in 0.031 seconds
+
+3 examples, 0 failures
+
+C:\work\ruby\Zork>touch app.rb
+
+C:\work\ruby\Zork>ruby app.rb
+app.rb:3: uninitialized constant Zork (NameError)
+app.rb:3: uninitialized constant Zork (NameError)
+
+C:\work\ruby\Zork>ruby app.rb
+== Sinatra/0.9.4 has taken the stage on 4567 for development with backup from WEBrick
+[2010-02-16 18:18:59] INFO  WEBrick 1.3.1
+[2010-02-16 18:18:59] INFO  ruby 1.8.6 (2008-08-11) [i386-mswin32]
+[2010-02-16 18:18:59] INFO  WEBrick::HTTPServer#start: pid=308 port=4567
+127.0.0.1 - - [16/Feb/2010 18:19:14] "GET / HTTP/1.1" 200 18 0.0000
+microlith - - [16/Feb/2010:18:19:14 Pacific Standard Time] "GET / HTTP/1.1" 200 18
+- -> /
+127.0.0.1 - - [16/Feb/2010 18:19:14] "GET /favicon.ico HTTP/1.1" 404 420 0.0150
+microlith - - [16/Feb/2010:18:19:14 Pacific Standard Time] "GET /favicon.ico HTTP/1.1" 404 420
+- -> /favicon.ico
+127.0.0.1 - - [16/Feb/2010 18:19:17] "GET /favicon.ico HTTP/1.1" 404 420 0.0150
+microlith - - [16/Feb/2010:18:19:17 Pacific Standard Time] "GET /favicon.ico HTTP/1.1" 404 420
+- -> /favicon.ico

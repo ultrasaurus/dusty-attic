@@ -3,8 +3,13 @@ require 'place'
 describe Place do
   describe "filled in object" do
     before do
-      @description = "some place"
-      @place = Place.new(:description => @description)
+      @name = "my place"
+      @description = "my very nice place"
+      @place = Place.new(:description => @description, :name => @name)
+    end
+    it 'should have a name' do
+      @place.name.should_not be_nil
+      @place.name.should == @name
     end
     it 'should have a description' do
       @place.description.should_not be_nil
@@ -28,6 +33,9 @@ describe Place do
 
     it 'should have a description' do
       @place.description.should == "the vastness of space"
+    end
+    it 'should have a name' do
+      @place.name.should == "empty place"
     end
   end
 end

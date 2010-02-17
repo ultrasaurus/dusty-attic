@@ -1,0 +1,22 @@
+house: !ruby/object:Place
+        description: you are in a house
+        links:
+                go north: firehouse
+                go upstairs: loft
+                go down: tunnel
+
+
+loft: !ruby/object:Place
+        description: he loft is light and airy
+        links:
+                go downstairs: house
+
+tunnel: !ruby/object:Place
+        description: it is dark in here
+              
+firehouse: !ruby/object:Place
+        description: there is a long pole and a hole in the ceiling
+        links:
+                go south: house
+
+
