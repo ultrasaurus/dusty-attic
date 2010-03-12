@@ -5,7 +5,7 @@ require 'zork'
 $zork = Zork.new("testdata/zork.yaml")
 
 get '/' do
-  
+  "<a href='/start'>Start Game</a>" 
 end
 
 get '/:place' do
