@@ -1,39 +1,27 @@
-=begin
 require 'rubygems'
 require 'sinatra'
 require 'zork'
 
-#put this on Heroku
-
 $zork = Zork.new("testdata/zork.yaml")
 
 get '/' do
-  "<html><p>#{p.description }</p></html>"  
+  
 end
-=end
 
+get '/:place' do
+  new_place_name = @params[:place]
 
-  # myapp.rb
-  require 'rubygems'
-  require 'sinatra'
-  require 'zork'
-
-  $zork = Zork.new("testdata/zork.yaml")
-
-  get '/' do
-    $zork.place.description
+  $zork.go(new_place_name) unless new_place_name.nil? 
+  doc = "<html><p>" +
+  $zork.place.description +
+  "</p>"
+  links = $zork.place.links
+  unless links.nil?
+    links.each do |label,destination| 
+      doc += "<li><a href=\'/#{destination}\'>#{label}</a></li>"
+    end
   end
-
-=begin
-
-get '/:link' do
-  unless link.nil?
-    @zork.follow(link)
-  end
-  p = $zork.place
-  "<html><p>#{p.description }</p>" +
-  "<ul>"
-  "<li><a href='"
-  "</html>"
+  doc += "</html>"
+  doc
 end
-=end
+

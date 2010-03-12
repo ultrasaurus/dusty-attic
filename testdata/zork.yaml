@@ -13,6 +13,7 @@ loft: !ruby/object:Place
 
 tunnel: !ruby/object:Place
         description: it is dark in here
+        links:
               
 firehouse: !ruby/object:Place
         description: there is a long pole and a hole in the ceiling
