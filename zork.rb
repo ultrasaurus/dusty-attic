@@ -3,24 +3,25 @@ require 'place'
 class Zork
    attr_accessor :place
 
-  def initialize(filename=nil)
-    if filename.nil?
+  def initialize(place_hash=nil)
+    if place_hash.nil?
       @place = Place.new
     else
-      File.open(filename) do |f|
-        @places = YAML::load(f)
-        @places.each do |key, place|
-          place.name = key
-        end
-        @place = @places["house"]
+      @places = {}
+      place_hash.each do |p|
+        p name = p[:name]
+        p description = p[:description]
+        p options = p[:options]
+        @places[name] = Place.new(name, description, options)
       end 
+      @place = @places['house']
     end
   end
 
   def follow(where)
     @place.links[where]
   end
-
+  
   def go(place_name)
     new_place = @places[place_name] 
     @place = new_place unless new_place.nil?

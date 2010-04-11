@@ -5,7 +5,8 @@ describe Place do
     before do
       @name = "my place"
       @description = "my very nice place"
-      @place = Place.new(:description => @description, :name => @name)
+      @options = {'up' => 'another place'}
+      @place = Place.new(@name, @description, @options)
     end
     it 'should have a name' do
       @place.name.should_not be_nil
@@ -18,7 +19,7 @@ describe Place do
       @place.description.should == @description
     end
     it 'should have a list of links' do
-      @place.links.should == {}
+      @place.links.should == {'up' => 'another place'}
     end
 
   end

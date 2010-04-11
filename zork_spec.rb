@@ -22,9 +22,11 @@ describe Zork do
       @zork.follow("go north").should == @firehouse
     end
   end
-  describe "loading a map" do
-    it 'should load a map at startup' do
-      @zork = Zork.new('testdata/zork.yaml')
+  describe "loading a hash" do
+    it 'should load a hash at startup' do
+      house = {:name => 'house', :description => 'You are in a house', :options => {'up' => 'attic', 'down' => 'cellar'}  } 
+      zork = [house]
+      @zork = Zork.new(zork)
       @zork.place.name.should == "house"
     end
   end
